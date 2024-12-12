@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="Home" style="height: 140px;">
+    </div>
+    <div class="navbar">
+        <h1 class="logo">GO Green</h1>
+        <div class="navitems">
+            <a href="#Home">Home</a>
+            <a href="#location">Locator</a>
+            <a href="">E-waste</a>
+            <a href="">About</a>
+            <a href="">Contact US</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Welcome to Our E-Waste Facility Management Platform!</h1>
+        <p>Discover a smarter, greener way to manage electronic waste.</p>
+    </div>
+    <div class="content">
+        <section class="why-choose-us">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Comprehensive Solutions:</strong> Locate verified e-waste centers easily.</li>
+                <li><strong>Environmental Impact:</strong> Play a part in reducing pollution and conserving resources.
+                </li>
+                <li><strong>User-Friendly Interface:</strong> Seamlessly navigate to find all you need.</li>
+            </ul>
+        </section>
+        <section class="join-movement">
+            <h2>Join the Movement!</h2>
+            <p>Together, we can create a sustainable future by responsibly handling electronic waste.</p>
+            <p>Explore more about e-waste management, our locations, and how you can contribute by browsing through our
+                site.</p>
+        </section>
+    </div>
+    <div style="height: 140px;"></div>
+
+    <div id="location" style="background-color: rgb(177, 232, 93); ">
+        <h1 style="text-align: center; padding: 20px; width: 100%;;">Location</h1>
+
+        <div class="selectlocation">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" onchange="populateStates()">
+                <option value="">--Select Country--</option>
+                <option value="IN">India</option>
+            </select>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" onchange="populateDistricts()">
+                <option value="">--Select State--</option>
+            </select>
+
+            <label for="district">District:</label>
+            <select id="district" name="district">
+                <option value="">--Select District--</option>
+            </select>
+
+            <button onclick="performSearch()">Search</button>
+            
+        </div>
+
+        <div id="results" class="points"></div>
+        <div class="iframe">
+            <iframe id="map" src=""></iframe>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
